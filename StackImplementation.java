@@ -8,8 +8,20 @@ class Stack{
 		data = new int[size];
 		top = 0;
 	}
+	
+	//to create a dynamic array
+// 	public void increaseSize(){
+// 		int[] newData = new int[data.length*2];
+// 		for(int i=0 ; i<data.length ; i++){
+// 			newData[i] = data[i];
+// 		}
+// 		data = newData;
+// 	}
 	//add elements at the top of the stack
 	public void addElements(int value){
+		//if dynamic array is used then
+		//if(top == data.length)
+		//increseSize();
 		if(top == data.length-1){
 			System.out.println("Stack overflow");
 			return;
