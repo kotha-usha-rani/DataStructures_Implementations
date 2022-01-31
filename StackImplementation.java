@@ -1,10 +1,7 @@
-class StackImplementation{
-
-}
-class Stack{
+class StackImplementation<T>{
 	T[] data;
 	int top;
-	Stack(){
+	StackImplementation(){
 		data = new T[size];
 		top = 0;
 	}
