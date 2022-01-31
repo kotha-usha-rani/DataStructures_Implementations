@@ -2,10 +2,10 @@ class StackImplementation{
 
 }
 class Stack{
-	int[] data;
+	T[] data;
 	int top;
-	Stack(int size){
-		data = new int[size];
+	Stack(){
+		data = new T[size];
 		top = 0;
 	}
 	
@@ -18,7 +18,7 @@ class Stack{
 // 		data = newData;
 // 	}
 	//add elements at the top of the stack
-	public void addElements(int value){
+	public void addElements(T value){
 		//if dynamic array is used then
 		//if(top == data.length)
 		//increseSize();
@@ -30,12 +30,12 @@ class Stack{
 	}
 
 	//pop an element from the stack
-	public int popElement(){
+	public T popElement(){
 		if(top == 0){
 			System.out.println("Stack underflow");
 			return Integer.MIN_VALUE;
 		}
-		int ele = data[--top];
+		T ele = data[--top];
 		return ele;
 	}
 
