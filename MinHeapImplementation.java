@@ -54,7 +54,7 @@ class PriorityQueue{
 		while(parentIndex < minHeap.size()-1){
 			int minIndex = parentIndex;
 			if(leftChild < minHeap.size()){
-				if(rightChild < minHeap.size() && minHeap.get(leftChild) > minHeap.get(rightChild))
+				if(rightChild < minHeap.size() && minHeap.get(leftChild) > minHeap.get(rightChild) && arr[rightChild] < arr[maxIndex])
 					minIndex = rightChild;
 				else if(minHeap.get(leftChild) < minHeap.get(minIndex))
 					minIndex = leftChild;
