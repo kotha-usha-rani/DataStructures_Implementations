@@ -1,16 +1,15 @@
 import java.util.ArrayList;
 class MinHeapImplementation{
 	public static void main(String[] args){
-		PriorityQueue maxHeap = new PriorityQueue();
-		maxHeap.insertElement(10);
-		maxHeap.insertElement(4);
-		maxHeap.insertElement(6);
-		maxHeap.insertElement(12);
-		maxHeap.insertElement(2);
-		maxHeap.insertElement(67);
-		maxHeap.deleteElement();
-		maxHeap.deleteElement();
-		//maxHeap.sortMaxHeap();
+		PriorityQueue minHeap = new PriorityQueue();
+		minHeap.insertElement(10);
+		minHeap.insertElement(4);
+		minHeap.insertElement(6);
+		minHeap.insertElement(12);
+		minHeap.insertElement(2);
+		minHeap.insertElement(67);
+		minHeap.deleteElement();
+		minHeap.deleteElement();
 	}
 }
 class PriorityQueue{
